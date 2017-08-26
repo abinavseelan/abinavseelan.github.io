@@ -112,14 +112,14 @@
             font-size: 3em;
         }
 
-        a {
+        .link {
             color: inherit;
             border-bottom: 1px solid #d4ded9;
             text-decoration: none;
-            transition: all 0.5s ease-out;
+            transition: all 0.5s;
         }
 
-        a:hover {
+        .link:hover {
             border-bottom: 1px solid #707676;
             transition: all 0.5s ease-out;
         }
@@ -133,6 +133,10 @@
             padding: 10px 40px;
         }
 
+        .cta, .social-cta {
+            margin: 25px 0;
+        }
+
         .t-center {
             text-align: center;
         }
@@ -143,6 +147,63 @@
 
         .t-regular {
             font-weight: 400;
+        }
+
+        hr {
+            width: 40%;
+            opacity: 0.4;
+        }
+
+        .no-link {
+            text-decoration: none;
+        }
+
+        .icon {
+            height: 40px;
+            width: 40px;
+            opacity: 0.3;
+            transition: opacity 0.15s ease-out;
+
+            margin: 10px;
+        }
+
+        .icon:hover {
+            opacity: 0.65;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 10px 20px;
+            color: white;
+            border-radius: 4px;
+            display: inline-block;
+            text-shadow: 0 1px 3px rgba(36,180,126,.4);
+            box-shadow: 0 4px 6px rgba(50,50,93,.11);
+            transition: all 0.15s;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .btn-primary {
+            background-color: #6772e5;
+        }
+
+        .btn-secondary {
+            background-color: #3ecf8e;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            transition: all 0.15s;
+            transform: translateY(-1px);
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        }
+
+        .btn-primary:hover {
+            background-color: #7795f8;
+        }
+
+        .btn-secondary:hover {
+            background-color: #47e9a0;
         }
 
         @media (max-width: 768px) {
@@ -175,15 +236,41 @@
                     height="150"
                     width="150"
                     alt="@abinavseelan on Github"
-                    src="https://avatars3.githubusercontent.com/u/6417910?v=4&u=d0f38d3a3cff2da6bad47e93b2db3b6abd4f2a00&s=400"
+                    src="/images/me.jpeg"
                 ></amp-img>
                 <h1 class="name t-light">Abinav Seelan</h1>
             </header>
             <h2 class="t-center t-light summary">
                 <strong>Web Engineer</strong> and <strong>Javascript Junkie</strong> living in Bangalore, India. Author at
-                <strong><a href="https://blog.campvanilla.com">Camp Vanilla</a></strong>. Building
-                marketplaces for developing countries at <strong><a href="https://saltside.se">Saltside</a></strong>
+                <strong><a class="link" href="https://blog.campvanilla.com">Camp Vanilla</a></strong>. Building
+                marketplaces for developing countries at <strong><a class="link" href="https://saltside.se">Saltside</a></strong>
             </h2>
+            <div class="t-center social">
+                <div class="cta">
+                    <a class="btn-primary t-regular" href="https://blog.campvanilla.com">Visit Camp Vanilla</a>
+                    <a class="btn-secondary t-regular" href="/resume.pdf" target="_blank">My Resume</a>
+                </div>
+                <hr />
+                <div class="social-cta">
+                    <a class="icon no-link" href="https://github.com/abinavseelan">
+                        <amp-img height="40" width="40" src="/images/github.svg" alt="github"
+                        >
+                        </amp-img>
+                    </a>
+                    <a class="icon no-link" href="https://twitter.com/abinavseelan">
+                        <amp-img height="40" width="40" src="/images/twitter.svg" alt="twitter">
+                        </amp-img>
+                    </a>
+                    <a class="icon no-link" href="https://medium.com/@abinavseelan">
+                        <amp-img height="40" width="40" src="/images/medium.svg" alt="medium">
+                        </amp-img>
+                    </a>
+                    <a class="icon no-link" href="https://linkedin.com/in/abinavseelan">
+                        <amp-img height="40" width="40" src="/images/linkedin.svg" alt="linkedin">
+                        </amp-img>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- <amp-analytics type="googleanalytics">
