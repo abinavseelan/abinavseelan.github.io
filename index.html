@@ -90,11 +90,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
             color: #707676;
         }
 
-        .card {
+        .card, .card-wide {
             margin: 40px 20px;
             padding: 40px;
             width: 700px;
@@ -105,11 +104,41 @@
             background-color: white;
         }
 
-        .name {
+        .card-wide {
+            width: 900px;
+        }
+
+        .name, .section-heading {
             text-transform: uppercase;
             letter-spacing: 0.5rem;
             line-height: 1;
             font-size: 3em;
+        }
+
+        .section-heading {
+            font-size: 2em;
+            margin-bottom: 50px;
+        }
+
+        .sub-section {
+            margin: 3em 0;
+        }
+
+        .sub-section h3, .sub-section h4 {
+            margin: 5px 0;
+        }
+
+        .sub-section h3 {
+            font-size: 1.5rem;
+        }
+
+        .sub-section h4 {
+            font-size: 1rem;
+        }
+
+        .sub-section p {
+            font-size: 1rem;
+            font-weight: 200;
         }
 
         .link {
@@ -270,6 +299,52 @@
                         </amp-img>
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="card-wide">
+            <h2 class="section-heading">
+                Talks.
+            </h2>
+            <div class="sub-section">
+                <h3>
+                    <a class="link" href="https://github.com/abinavseelan/introduction-to-redux">
+                        An Introduction to Redux
+                    </a>
+                </h3>
+                <h4>
+                   August 2017, Saltside 
+                </h4>
+                <p>
+                    Crash course on the importance of Redux in managing application state. Talk was primarily focused on ramping up the web
+                    team at Saltside to work on the new web stack (React/Redux - ExpressJS - NodeJS).
+                </p>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    <a class="link" href="https://github.com/abinavseelan/pesitbsc-nodejs101">
+                        Camp Node - An Introduction to building web applications
+                    </a>
+                </h3>
+                <h4>
+                    March 2016, PESIT Bangalore South Campus
+                </h4>
+                <p>
+                    Getting started with web programming for the new web developers through live-coding examples. Built with NodeJS, ExpressJS
+                    and MongoDB.
+                </p>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    <a class="link" href="https://github.com/abinavseelan/introduction-to-redux">
+                        An Introduction to Git and Github
+                    </a>
+                </h3>
+                <h4>
+                    September 2016, PESIT Bangalore South Campus
+                </h4>
+                <p>
+                    Introducing Version Control Systems, specifically Git, and using it with Github to students of PESIT South Campus
+                </p>
             </div>
         </div>
     </div>
